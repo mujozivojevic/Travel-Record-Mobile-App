@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TravelRecordApp"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TravelRecordApp.HomePage">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Add" 
+                     Clicked="ToolbarItem_Clicked" 
+                     Icon ="add.png"
+                     />
+        
+    </TabbedPage.ToolbarItems>
+    <local:History Title="Histroy" Icon ="home.png"/>
+    <local:MapPage Title="Map" Icon="map.png"></local:MapPage>
+    <local:ProfilePage Title="Profile" Icon="user.png"></local:ProfilePage>
+</TabbedPage>
